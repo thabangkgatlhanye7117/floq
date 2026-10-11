@@ -95,6 +95,11 @@ export default async function Dashboard({ searchParams }: { searchParams: { even
         <>
           <h1>{ev.name}</h1>
           <p className="lede" style={{ marginTop: 8 }}>{when(ev.starts_at)}</p>
+          <p style={{ marginTop: 14 }}>
+            <Link className="btn line sm" href={`/report?event=${ev.slug}`}>
+              Sponsor report
+            </Link>
+          </p>
 
           <section>
             <div className="grid g2">
