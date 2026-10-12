@@ -10,6 +10,8 @@ export const QUESTION_LABELS: Record<string, string> = {
   drinks: "What they'll drink",
   spend: "Expected spend (besides ticket)",
   music: "Music they want",
+  craving: "What food they're in the mood for",
+  events: "Skyfall events attended before",
 };
 
 // Questions whose options have a natural order; everything else sorts by popularity.
@@ -18,7 +20,7 @@ const ORDER: Record<string, string[]> = {
   visits: ["First time", "Once or twice", "Regular"],
   group: ["Just me", "2-3 people", "4-6 people", "7 or more"],
   arrive: ["When doors open", "1-2 hours after doors", "3+ hours after doors", "Not sure yet"],
-  spend: ["Under R150", "R150-R300", "R300-R600", "R600+"],
+  spend: ["Under R100", "R100-R200", "R200-R400", "R400+"],
 };
 
 /** Which chart suits each question. ordered scales -> columns, small share-of-whole -> donut, the rest -> ranked bars. */
