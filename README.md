@@ -1,4 +1,4 @@
-# Bullasoft Platform
+# Floq
 
 **Event intelligence for event owners.** Owners sign in to a private dashboard and see who is coming to their
 event (pre-event survey), who is on their mailing list, where sign-ups came from, and a **live headcount from the
@@ -6,8 +6,7 @@ gate**, all from data the event owner collected first-hand.
 
 It is built and owned by Bullasoft, and Skyfall Entertainment (KWA GOGO, SKYFALL, Back2Back) is the first client.
 
-> Working name. The product name is still being decided, so "Bullasoft Platform" is a placeholder. The name and
-> logo appear in only a few places (see [Where things are](#where-things-are)).
+
 
 ---
 
@@ -38,7 +37,7 @@ There are **two apps** sharing **one database**:
             |                                               |
             v                                               v
   +----------------------+                      +------------------------+
-  |  Skyfall website     |                      |  Bullasoft Platform    |
+  |  Skyfall website     |                      |  Floq    |
   |  (Next.js, Vercel)   |                      |  (this repo, Vercel)   |
   |                      |                      |                        |
   |  - subscribe         |                      |  - login (roles)       |
@@ -56,7 +55,7 @@ There are **two apps** sharing **one database**:
 ```
 
 - The **Skyfall site** is the public face. Visitors never log in; they sign up and answer the survey.
-- The **Bullasoft Platform** is private. Only people an admin created can sign in.
+- The **Floq** is private. Only people an admin created can sign in.
 - **Supabase** is the single source of truth. Both apps read and write the same tables, which is why a survey
   answer given on the website shows on the dashboard within seconds.
 
